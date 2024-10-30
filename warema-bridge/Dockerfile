@@ -15,7 +15,7 @@ RUN \
     apk add --no-cache npm
 
 # Copy root filesystem
-COPY rootfs/srv/package-lock.json /srv
+# COPY rootfs/srv/package-lock.json /srv
 COPY rootfs/srv/package.json /srv
 
 WORKDIR /srv
