@@ -7,8 +7,7 @@
   "startup": "services",
   "url": "https://github.com/BL-Git/warema-wms-bl",
   "boot": "auto",
-  "hassio_api": true,
-  "image": "bl-git/warema-wms-bl",
+  "hassio_api": true,  
   "options": {
     "wms_serial_port": null
   },
