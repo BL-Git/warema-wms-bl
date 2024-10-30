@@ -2,6 +2,8 @@ ARG BUILD_FROM=hassioaddons/base:edge
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
+RUN chmod +x /srv
+
 # Set shell
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
