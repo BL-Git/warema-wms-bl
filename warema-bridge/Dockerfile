@@ -18,7 +18,8 @@ COPY rootfs/srv/package.json /srv
 
 WORKDIR /srv
 
-RUN npm ci
+# RUN npm ci
+RUN npm install
 
 RUN apk del --no-cache --purge .build-deps && rm -rf /root/.npm /root/.cache
 
