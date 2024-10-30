@@ -1,6 +1,6 @@
 {
   "name": "Warema Bridge BL",
-  "version": "0.07",
+  "version": "0.08",
   "slug": "warema-wms",
   "description": "Warema WMS BL",
   "arch": ["aarch64", "amd64", "armv7", "i386"],
