@@ -1,0 +1,26 @@
+{
+  "name": "Warema Bridge BL",
+  "version": "dev",
+  "slug": "warema-wms",
+  "description": "Warema WMS BL",
+  "arch": ["aarch64", "amd64", "armv7", "i386"],
+  "startup": "services",
+  "url": "https://github.com/BL-Git/warema-wms-bl",
+  "boot": "auto",
+  "hassio_api": true,
+  "image": "BL-Git/warema-wms-bl",
+  "options": {
+    "wms_serial_port": null
+  },
+  "schema": {
+    "wms_key": "str?",
+    "wms_pan_id": "str?",
+    "wms_channel": "int?",
+    "wms_serial_port": "device(subsystem=tty)",
+    "ignored_devices": "str?",
+    "force_devices": "str?"
+  },
+  "services": [
+    "mqtt:need"
+  ]
+}
